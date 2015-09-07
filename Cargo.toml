@@ -1,0 +1,16 @@
+[package]
+name = "load"
+version = "1.0.0"
+authors = ["Patrick Burroughs (Celti) <celti@celti.name>"]
+
+[dependencies]
+libc="*"
+getopts="*"
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 8
